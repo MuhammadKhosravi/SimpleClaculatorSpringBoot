@@ -13,8 +13,8 @@ public class CalculatorController {
         int int_op2 = Integer.parseInt(op2);
 
         return switch (operator) {
-            case "add" -> int_op1 + " + " + int_op2 + " = " + (int_op1 + int_op2);
-            case "sub" -> int_op1 + " - " + int_op2 + " = " + (int_op1 - int_op2);
+            case "sum" -> int_op1 + " + " + int_op2 + " = " + (int_op1 + int_op2);
+            case "subtract" -> int_op1 + " - " + int_op2 + " = " + (int_op1 - int_op2);
             case "mult" -> int_op1 + " * " + int_op2 + " = " + (int_op1 * int_op2);
             case "div" -> int_op1 + " / " + int_op2 + " = " + ((float) int_op1 / (float) int_op2);
             default -> "Invalid operator";
